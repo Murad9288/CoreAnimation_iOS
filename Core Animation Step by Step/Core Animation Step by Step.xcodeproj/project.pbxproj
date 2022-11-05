@@ -14,6 +14,8 @@
 		210A486C2916BA6500EAD27A /* Core_Animation_Step_by_Step.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 210A486A2916BA6500EAD27A /* Core_Animation_Step_by_Step.xcdatamodeld */; };
 		210A486E2916BA6700EAD27A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210A486D2916BA6700EAD27A /* Assets.xcassets */; };
 		210A48712916BA6700EAD27A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210A486F2916BA6700EAD27A /* LaunchScreen.storyboard */; };
+		210A48822916DEA600EAD27A /* animationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A48802916DEA600EAD27A /* animationTableViewCell.swift */; };
+		210A48832916DEA600EAD27A /* animationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210A48812916DEA600EAD27A /* animationTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		210A486D2916BA6700EAD27A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		210A48702916BA6700EAD27A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		210A48722916BA6700EAD27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		210A48802916DEA600EAD27A /* animationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animationTableViewCell.swift; sourceTree = "<group>"; };
+		210A48812916DEA600EAD27A /* animationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = animationTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		210A487D2916C02500EAD27A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				210A48802916DEA600EAD27A /* animationTableViewCell.swift */,
+				210A48812916DEA600EAD27A /* animationTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -162,6 +168,7 @@
 			files = (
 				210A48712916BA6700EAD27A /* LaunchScreen.storyboard in Resources */,
 				210A486E2916BA6700EAD27A /* Assets.xcassets in Resources */,
+				210A48832916DEA600EAD27A /* animationTableViewCell.xib in Resources */,
 				210A48692916BA6500EAD27A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				210A486C2916BA6500EAD27A /* Core_Animation_Step_by_Step.xcdatamodeld in Sources */,
+				210A48822916DEA600EAD27A /* animationTableViewCell.swift in Sources */,
 				210A48662916BA6500EAD27A /* ViewController.swift in Sources */,
 				210A48622916BA6500EAD27A /* AppDelegate.swift in Sources */,
 				210A48642916BA6500EAD27A /* SceneDelegate.swift in Sources */,
