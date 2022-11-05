@@ -58,16 +58,48 @@
 		210A48602916BA6500EAD27A /* Core Animation Step by Step */ = {
 			isa = PBXGroup;
 			children = (
-				210A48612916BA6500EAD27A /* AppDelegate.swift */,
-				210A48632916BA6500EAD27A /* SceneDelegate.swift */,
-				210A48652916BA6500EAD27A /* ViewController.swift */,
-				210A48672916BA6500EAD27A /* Main.storyboard */,
+				210A487F2916C03800EAD27A /* System */,
+				210A487E2916C02F00EAD27A /* Model */,
+				210A487D2916C02500EAD27A /* View */,
+				210A487B2916BFAC00EAD27A /* Controller */,
 				210A486D2916BA6700EAD27A /* Assets.xcassets */,
-				210A486F2916BA6700EAD27A /* LaunchScreen.storyboard */,
 				210A48722916BA6700EAD27A /* Info.plist */,
 				210A486A2916BA6500EAD27A /* Core_Animation_Step_by_Step.xcdatamodeld */,
 			);
 			path = "Core Animation Step by Step";
+			sourceTree = "<group>";
+		};
+		210A487B2916BFAC00EAD27A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				210A48652916BA6500EAD27A /* ViewController.swift */,
+				210A48672916BA6500EAD27A /* Main.storyboard */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		210A487D2916C02500EAD27A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		210A487E2916C02F00EAD27A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		210A487F2916C03800EAD27A /* System */ = {
+			isa = PBXGroup;
+			children = (
+				210A48632916BA6500EAD27A /* SceneDelegate.swift */,
+				210A48612916BA6500EAD27A /* AppDelegate.swift */,
+				210A486F2916BA6700EAD27A /* LaunchScreen.storyboard */,
+			);
+			name = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
