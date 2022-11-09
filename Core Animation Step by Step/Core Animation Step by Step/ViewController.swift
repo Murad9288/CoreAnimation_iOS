@@ -10,10 +10,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var animationtextName = ["murad","kahem"]
+    
+    var animationtextName = ["Left-side Animation","Right-side Animation"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableViewSetup()
         
     }
@@ -23,7 +25,6 @@ class ViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: "cell")
         
     }
-
 
 }
 
@@ -39,4 +40,26 @@ extension ViewController: UITableViewDataSource{
     }
     
     
+}
+
+extension ViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        for i in 1...2 {
+            print(i)
+            if i == 1 {
+                let st = UIStoryboard(name: "ImageViewVC", bundle: nil)
+                let vc = st.instantiateViewController(withIdentifier: "imageViewController") as! imageViewController
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+            }else if i == 2 {
+
+                let st = UIStoryboard(name: "Right_Storyboard", bundle: nil)
+                let vc = st.instantiateViewController(withIdentifier: "rightViewController") as! rightViewController
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        
+    }
 }

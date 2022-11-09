@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2105A70429197BF3006799BD /* imageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2105A70329197BF3006799BD /* imageViewController.swift */; };
+		2105A70629197C09006799BD /* ImageViewVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2105A70529197C09006799BD /* ImageViewVC.storyboard */; };
+		2105A70829198AB2006799BD /* Right_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2105A70729198AB2006799BD /* Right_Storyboard.storyboard */; };
+		2105A70B29198AEC006799BD /* rightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2105A70A29198AEC006799BD /* rightViewController.swift */; };
 		210A48622916BA6500EAD27A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A48612916BA6500EAD27A /* AppDelegate.swift */; };
 		210A48642916BA6500EAD27A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A48632916BA6500EAD27A /* SceneDelegate.swift */; };
 		210A48662916BA6500EAD27A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A48652916BA6500EAD27A /* ViewController.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2105A70329197BF3006799BD /* imageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageViewController.swift; sourceTree = "<group>"; };
+		2105A70529197C09006799BD /* ImageViewVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageViewVC.storyboard; sourceTree = "<group>"; };
+		2105A70729198AB2006799BD /* Right_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Right_Storyboard.storyboard; sourceTree = "<group>"; };
+		2105A70A29198AEC006799BD /* rightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rightViewController.swift; sourceTree = "<group>"; };
 		210A485E2916BA6500EAD27A /* Core Animation Step by Step.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Animation Step by Step.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		210A48612916BA6500EAD27A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		210A48632916BA6500EAD27A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +51,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2105A70029197BAD006799BD /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				210A48652916BA6500EAD27A /* ViewController.swift */,
+				210A48672916BA6500EAD27A /* Main.storyboard */,
+			);
+			name = HomeVC;
+			sourceTree = "<group>";
+		};
+		2105A70129197BC6006799BD /* ImageVC */ = {
+			isa = PBXGroup;
+			children = (
+				2105A70329197BF3006799BD /* imageViewController.swift */,
+				2105A70529197C09006799BD /* ImageViewVC.storyboard */,
+			);
+			name = ImageVC;
+			sourceTree = "<group>";
+		};
+		2105A70929198AC1006799BD /* rightVC */ = {
+			isa = PBXGroup;
+			children = (
+				2105A70729198AB2006799BD /* Right_Storyboard.storyboard */,
+				2105A70A29198AEC006799BD /* rightViewController.swift */,
+			);
+			name = rightVC;
+			sourceTree = "<group>";
+		};
 		210A48552916BA6500EAD27A = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +111,9 @@
 		210A487B2916BFAC00EAD27A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				210A48652916BA6500EAD27A /* ViewController.swift */,
-				210A48672916BA6500EAD27A /* Main.storyboard */,
+				2105A70929198AC1006799BD /* rightVC */,
+				2105A70129197BC6006799BD /* ImageVC */,
+				2105A70029197BAD006799BD /* HomeVC */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -166,10 +202,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2105A70629197C09006799BD /* ImageViewVC.storyboard in Resources */,
 				210A48712916BA6700EAD27A /* LaunchScreen.storyboard in Resources */,
 				210A486E2916BA6700EAD27A /* Assets.xcassets in Resources */,
 				210A48832916DEA600EAD27A /* animationTableViewCell.xib in Resources */,
 				210A48692916BA6500EAD27A /* Main.storyboard in Resources */,
+				2105A70829198AB2006799BD /* Right_Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2105A70429197BF3006799BD /* imageViewController.swift in Sources */,
+				2105A70B29198AEC006799BD /* rightViewController.swift in Sources */,
 				210A486C2916BA6500EAD27A /* Core_Animation_Step_by_Step.xcdatamodeld in Sources */,
 				210A48822916DEA600EAD27A /* animationTableViewCell.swift in Sources */,
 				210A48662916BA6500EAD27A /* ViewController.swift in Sources */,
