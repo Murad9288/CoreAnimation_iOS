@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var animationtextName = ["Left-side Animation","Right-side Animation"]
+    var animationtextName = ["Left-side Animation","Right-side Animation","Top Animation","Bottom Animation","Under Bounce Animation"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,21 +45,32 @@ extension ViewController: UITableViewDataSource{
 extension ViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        for i in 1...2 {
-            print(i)
-            if i == 1 {
-                let st = UIStoryboard(name: "ImageViewVC", bundle: nil)
-                let vc = st.instantiateViewController(withIdentifier: "imageViewController") as! imageViewController
-                
-                self.navigationController?.pushViewController(vc, animated: true)
-            }else if i == 2 {
-
-                let st = UIStoryboard(name: "Right_Storyboard", bundle: nil)
-                let vc = st.instantiateViewController(withIdentifier: "rightViewController") as! rightViewController
-                
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
+        if indexPath.row == 0 {
+            let st = UIStoryboard(name: "ImageViewVC", bundle: nil)
+            let vc = st.instantiateViewController(withIdentifier: "imageViewController") as! imageViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 1 {
+            
+            let st = UIStoryboard(name: "Right_Storyboard", bundle: nil)
+            let vc = st.instantiateViewController(withIdentifier: "rightViewController") as! rightViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 2 {
+            let st = UIStoryboard(name: "top_Storyboard", bundle: nil)
+            let vc = st.instantiateViewController(withIdentifier: "topViewController") as! topViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }else if indexPath.row == 3 {
+            let st = UIStoryboard(name: "bottom_Storyboard", bundle: nil)
+            let vc = st.instantiateViewController(withIdentifier: "bottomViewController") as! bottomViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }else if indexPath.row == 4 {
+            let st = UIStoryboard(name: "under_Storyboard", bundle: nil)
+            let vc = st.instantiateViewController(withIdentifier: "underViewController") as! underViewController
+            self.navigationController?.pushViewController(vc, animated: true)
         }
-        
     }
+    
 }
