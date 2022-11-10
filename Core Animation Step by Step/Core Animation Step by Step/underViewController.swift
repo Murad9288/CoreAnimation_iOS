@@ -59,7 +59,7 @@ class underViewController: UIViewController {
         animation.keyPath = "position.y"
         animation.fromValue = 4000
         animation.toValue  = 400
-        animation.duration = 0.70
+        animation.duration = 0.78
         
         view.layer.add(animation, forKey: "basic")
         
@@ -67,7 +67,7 @@ class underViewController: UIViewController {
     // MARK: Transform image view loded state
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        UIView.animate(withDuration: 1.1){
+        UIView.animate(withDuration: 1.1) {
             self.view.transform = CGAffineTransform(scaleX: 1, y: 1)
         }
     }
