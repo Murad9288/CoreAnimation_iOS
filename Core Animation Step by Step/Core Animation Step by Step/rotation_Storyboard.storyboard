@@ -16,20 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9sW-ju-TLe">
-                                <rect key="frame" x="20" y="219.33333333333331" width="357" height="414.00000000000017"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="31" translatesAutoresizingMaskIntoConstraints="NO" id="9sW-ju-TLe">
+                                <rect key="frame" x="31" y="241.66666666666663" width="331" height="369"/>
                                 <color key="backgroundColor" red="0.69363011978414235" green="1" blue="0.76393830417497666" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="417" id="8sk-Gj-QQV"/>
-                                    <constraint firstAttribute="width" constant="357" id="Km0-zX-31X"/>
+                                    <constraint firstAttribute="height" constant="369" id="8sk-Gj-QQV"/>
+                                    <constraint firstAttribute="width" constant="331" id="Km0-zX-31X"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9sW-ju-TLe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="2mb-X5-V3V"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9sW-ju-TLe" secondAttribute="trailing" constant="16" id="klv-pe-D2Y"/>
+                            <constraint firstItem="9sW-ju-TLe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="31" id="2mb-X5-V3V"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9sW-ju-TLe" secondAttribute="trailing" constant="31" id="klv-pe-D2Y"/>
                             <constraint firstItem="9sW-ju-TLe" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="leM-DV-jZc"/>
                         </constraints>
                     </view>
@@ -43,7 +43,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="photo.artframe" catalog="system" width="128" height="93"/>
+        <image name="31" width="1080" height="1920"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

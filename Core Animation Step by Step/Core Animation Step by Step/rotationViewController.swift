@@ -22,9 +22,8 @@ class rotationViewController: UIViewController {
     
     private func imageViewSetup(){
         
-        myImageView.tintColor = .black
         self.myImageView.layer.runAnimation(animation: Animation.rotationY(rotation: Float(Double.pi) * 4, delay: 2), blockCompletion: { () -> () in
-            self.myImageView.layer.runAnimation(animation: Animation.bounce(value: 100, delay: 1))
+            self.myImageView.layer.runAnimation(animation: Animation.bounce(value: 60, delay: 0.1))
         })
         
         
@@ -39,7 +38,7 @@ class rotationViewController: UIViewController {
 
         // Adding shadow effects
         myImageView.layer.shadowOffset = CGSizeMake(5,5)
-        myImageView.layer.shadowOpacity = 0.7
+        myImageView.layer.shadowOpacity = 1
         myImageView.layer.shadowRadius = 3
         myImageView.layer.shadowColor = UIColor(red: 20/225, green: 20/225, blue: 10/255, alpha: 0.7).cgColor
         
