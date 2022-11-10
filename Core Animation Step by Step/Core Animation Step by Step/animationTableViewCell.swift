@@ -11,6 +11,10 @@ class animationTableViewCell: UITableViewCell {
 
     @IBOutlet weak var animationtextName: UILabel!
     
+    
+    
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

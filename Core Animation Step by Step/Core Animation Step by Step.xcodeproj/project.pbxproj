@@ -37,6 +37,8 @@
 		21C06443291D123F00F8280F /* sequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06442291D123F00F8280F /* sequenceViewController.swift */; };
 		21C06445291D124B00F8280F /* positionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06444291D124B00F8280F /* positionViewController.swift */; };
 		21C06447291D125800F8280F /* bounceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06446291D125800F8280F /* bounceViewController.swift */; };
+		21C0644A291D469300F8280F /* transformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06449291D469300F8280F /* transformViewController.swift */; };
+		21C0644C291D46C900F8280F /* transform_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C0644B291D46C900F8280F /* transform_Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		21C06442291D123F00F8280F /* sequenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sequenceViewController.swift; sourceTree = "<group>"; };
 		21C06444291D124B00F8280F /* positionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = positionViewController.swift; sourceTree = "<group>"; };
 		21C06446291D125800F8280F /* bounceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bounceViewController.swift; sourceTree = "<group>"; };
+		21C06449291D469300F8280F /* transformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transformViewController.swift; sourceTree = "<group>"; };
+		21C0644B291D46C900F8280F /* transform_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = transform_Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 		210A487B2916BFAC00EAD27A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				21C06448291D467600F8280F /* transformVC */,
 				21C0643B291D11F500F8280F /* sequenceVC */,
 				21C0643A291D11EC00F8280F /* positionVC */,
 				21C06439291D11DB00F8280F /* bounceVC */,
@@ -163,8 +168,7 @@
 		210A487D2916C02500EAD27A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				210A48802916DEA600EAD27A /* animationTableViewCell.swift */,
-				210A48812916DEA600EAD27A /* animationTableViewCell.xib */,
+				21C0644D291D66AE00F8280F /* TableViewCell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -259,6 +263,24 @@
 			name = sequenceVC;
 			sourceTree = "<group>";
 		};
+		21C06448291D467600F8280F /* transformVC */ = {
+			isa = PBXGroup;
+			children = (
+				21C06449291D469300F8280F /* transformViewController.swift */,
+				21C0644B291D46C900F8280F /* transform_Storyboard.storyboard */,
+			);
+			name = transformVC;
+			sourceTree = "<group>";
+		};
+		21C0644D291D66AE00F8280F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				210A48802916DEA600EAD27A /* animationTableViewCell.swift */,
+				210A48812916DEA600EAD27A /* animationTableViewCell.xib */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -327,6 +349,7 @@
 				210A486E2916BA6700EAD27A /* Assets.xcassets in Resources */,
 				210A48832916DEA600EAD27A /* animationTableViewCell.xib in Resources */,
 				21292DBE291C0C02003B2D90 /* under_Storyboard.storyboard in Resources */,
+				21C0644C291D46C900F8280F /* transform_Storyboard.storyboard in Resources */,
 				210A48692916BA6500EAD27A /* Main.storyboard in Resources */,
 				2105A70829198AB2006799BD /* Right_Storyboard.storyboard in Resources */,
 				21C06441291D123000F8280F /* sequence_Storyboard.storyboard in Resources */,
@@ -342,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21C06447291D125800F8280F /* bounceViewController.swift in Sources */,
+				21C0644A291D469300F8280F /* transformViewController.swift in Sources */,
 				21292DB9291C0663003B2D90 /* bottomViewController.swift in Sources */,
 				2105A70429197BF3006799BD /* leftViewController.swift in Sources */,
 				2105A70B29198AEC006799BD /* rightViewController.swift in Sources */,

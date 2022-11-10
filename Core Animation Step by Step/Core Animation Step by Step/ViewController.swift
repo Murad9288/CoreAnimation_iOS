@@ -11,12 +11,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var animationtextName = ["Left-side Animation","Right-side Animation","Top Animation","Bottom Animation","Under Bounce Animation","Circle Animation","Rotation Animation","Bounce Animation","Position Animation","Sequence Animation"]
+    var animationtextName = ["Left-side Animation","Right-side Animation","Top Animation","Bottom Animation","Under Bounce Animation","Circle Animation","Rotation Animation","Bounce Animation","Position Animation","Sequence Animation","Transform Show"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableViewSetup()
+        
         
     }
     
@@ -35,7 +36,10 @@ extension ViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! animationTableViewCell
+        let view = UIView()
         cell.configure(name1: animationtextName[indexPath.row])
+        view.backgroundColor = UIColor.cyan
+        cell.selectedBackgroundView = view
         return cell
     }
     
@@ -102,6 +106,11 @@ extension ViewController: UITableViewDelegate{
             
             self.navigationController?.pushViewController(vc, animated: true)
             
+        } else if indexPath.row == 10 {
+            let st = UIStoryboard(name: "transform_Storyboard", bundle: nil)
+            let vc = st.instantiateViewController(withIdentifier: "transformViewController") as! transformViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     

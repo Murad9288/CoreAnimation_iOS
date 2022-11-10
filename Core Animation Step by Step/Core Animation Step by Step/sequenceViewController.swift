@@ -9,7 +9,7 @@ import UIKit
 
 class sequenceViewController: UIViewController {
     
-    let view1 = UIView(frame: CGRect(x: 45, y: 250, width: 300, height: 300))
+    let view1 = UIView(frame: CGRect(x: 100, y: 250, width: 300, height: 300))
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class sequenceViewController: UIViewController {
         view1.backgroundColor = .magenta
         view.addSubview(view1)
         
-        let sequenceAnimation = Animation.sequenceAnimations(animations: [Animation.resizeFrame(resize: CGSizeMake(30, 30), delay: 1.5),Animation.bounce(value: 30, delay: 0.1)])
+        let sequenceAnimation = Animation.sequenceAnimations(animations: [Animation.resizeFrame(resize: CGSizeMake(100, 100), delay: 1.5),Animation.bounce(value: 30, delay: 0.1)])
         self.view1.layer.runAnimation(animation: sequenceAnimation)
         
         
