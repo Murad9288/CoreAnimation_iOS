@@ -17,6 +17,7 @@ class bottomViewController: UIViewController {
         super.viewDidLoad()
         bottom_anim()
         springAnimation()
+        viewEffects()
         
     }
     
@@ -43,6 +44,27 @@ class bottomViewController: UIViewController {
         jump.toValue = 1
         jump.duration = jump.settlingDuration
         greenView.layer.add(jump, forKey: nil)
+        
+        
+    }
+    
+    private func viewEffects(){
+        
+        // MARK: View shadow Effects
+        
+        // Creating rounder corners
+        greenView.layer.cornerRadius = 10
+
+        // Adding shadow effects
+        greenView.layer.shadowOffset = CGSizeMake(5,5)
+        greenView.layer.shadowOpacity = 0.7
+        greenView.layer.shadowRadius = 3
+        greenView.layer.shadowColor = UIColor(red: 20/225, green: 20/225, blue: 10/255, alpha: 0.7).cgColor
+        
+        // Applying borders
+        greenView.layer.borderColor = UIColor(red: 40/225, green: 10/225, blue: 20/255, alpha: 0.1).cgColor
+
+        greenView.layer.borderWidth = 3
     }
 
 }

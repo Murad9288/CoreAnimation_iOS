@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2105A70429197BF3006799BD /* imageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2105A70329197BF3006799BD /* imageViewController.swift */; };
-		2105A70629197C09006799BD /* ImageViewVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2105A70529197C09006799BD /* ImageViewVC.storyboard */; };
+		2105A70429197BF3006799BD /* leftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2105A70329197BF3006799BD /* leftViewController.swift */; };
+		2105A70629197C09006799BD /* left_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2105A70529197C09006799BD /* left_Storyboard.storyboard */; };
 		2105A70829198AB2006799BD /* Right_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2105A70729198AB2006799BD /* Right_Storyboard.storyboard */; };
 		2105A70B29198AEC006799BD /* rightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2105A70A29198AEC006799BD /* rightViewController.swift */; };
 		210A48622916BA6500EAD27A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A48612916BA6500EAD27A /* AppDelegate.swift */; };
@@ -27,11 +27,21 @@
 		21292DBC291C0BF5003B2D90 /* underViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21292DBB291C0BF5003B2D90 /* underViewController.swift */; };
 		21292DBE291C0C02003B2D90 /* under_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21292DBD291C0C02003B2D90 /* under_Storyboard.storyboard */; };
 		21292DC0291C3005003B2D90 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21292DBF291C3005003B2D90 /* Animator.swift */; };
+		21C06431291D045E00F8280F /* circle_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C06430291D045E00F8280F /* circle_Storyboard.storyboard */; };
+		21C06433291D046C00F8280F /* circleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06432291D046C00F8280F /* circleViewController.swift */; };
+		21C06436291D105100F8280F /* rotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06435291D105100F8280F /* rotationViewController.swift */; };
+		21C06438291D106500F8280F /* rotation_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C06437291D106500F8280F /* rotation_Storyboard.storyboard */; };
+		21C0643D291D121100F8280F /* bounce_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C0643C291D121100F8280F /* bounce_Storyboard.storyboard */; };
+		21C0643F291D122300F8280F /* position_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C0643E291D122300F8280F /* position_Storyboard.storyboard */; };
+		21C06441291D123000F8280F /* sequence_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C06440291D123000F8280F /* sequence_Storyboard.storyboard */; };
+		21C06443291D123F00F8280F /* sequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06442291D123F00F8280F /* sequenceViewController.swift */; };
+		21C06445291D124B00F8280F /* positionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06444291D124B00F8280F /* positionViewController.swift */; };
+		21C06447291D125800F8280F /* bounceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06446291D125800F8280F /* bounceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2105A70329197BF3006799BD /* imageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageViewController.swift; sourceTree = "<group>"; };
-		2105A70529197C09006799BD /* ImageViewVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageViewVC.storyboard; sourceTree = "<group>"; };
+		2105A70329197BF3006799BD /* leftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leftViewController.swift; sourceTree = "<group>"; };
+		2105A70529197C09006799BD /* left_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = left_Storyboard.storyboard; sourceTree = "<group>"; };
 		2105A70729198AB2006799BD /* Right_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Right_Storyboard.storyboard; sourceTree = "<group>"; };
 		2105A70A29198AEC006799BD /* rightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rightViewController.swift; sourceTree = "<group>"; };
 		210A485E2916BA6500EAD27A /* Core Animation Step by Step.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Animation Step by Step.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +62,16 @@
 		21292DBB291C0BF5003B2D90 /* underViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = underViewController.swift; sourceTree = "<group>"; };
 		21292DBD291C0C02003B2D90 /* under_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = under_Storyboard.storyboard; sourceTree = "<group>"; };
 		21292DBF291C3005003B2D90 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		21C06430291D045E00F8280F /* circle_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = circle_Storyboard.storyboard; sourceTree = "<group>"; };
+		21C06432291D046C00F8280F /* circleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleViewController.swift; sourceTree = "<group>"; };
+		21C06435291D105100F8280F /* rotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rotationViewController.swift; sourceTree = "<group>"; };
+		21C06437291D106500F8280F /* rotation_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = rotation_Storyboard.storyboard; sourceTree = "<group>"; };
+		21C0643C291D121100F8280F /* bounce_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = bounce_Storyboard.storyboard; sourceTree = "<group>"; };
+		21C0643E291D122300F8280F /* position_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = position_Storyboard.storyboard; sourceTree = "<group>"; };
+		21C06440291D123000F8280F /* sequence_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = sequence_Storyboard.storyboard; sourceTree = "<group>"; };
+		21C06442291D123F00F8280F /* sequenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sequenceViewController.swift; sourceTree = "<group>"; };
+		21C06444291D124B00F8280F /* positionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = positionViewController.swift; sourceTree = "<group>"; };
+		21C06446291D125800F8280F /* bounceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bounceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +97,8 @@
 		2105A70129197BC6006799BD /* leftVC */ = {
 			isa = PBXGroup;
 			children = (
-				2105A70329197BF3006799BD /* imageViewController.swift */,
-				2105A70529197C09006799BD /* ImageViewVC.storyboard */,
+				2105A70329197BF3006799BD /* leftViewController.swift */,
+				2105A70529197C09006799BD /* left_Storyboard.storyboard */,
 			);
 			name = leftVC;
 			sourceTree = "<group>";
@@ -86,8 +106,8 @@
 		2105A70929198AC1006799BD /* rightVC */ = {
 			isa = PBXGroup;
 			children = (
-				2105A70729198AB2006799BD /* Right_Storyboard.storyboard */,
 				2105A70A29198AEC006799BD /* rightViewController.swift */,
+				2105A70729198AB2006799BD /* Right_Storyboard.storyboard */,
 			);
 			name = rightVC;
 			sourceTree = "<group>";
@@ -125,6 +145,11 @@
 		210A487B2916BFAC00EAD27A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				21C0643B291D11F500F8280F /* sequenceVC */,
+				21C0643A291D11EC00F8280F /* positionVC */,
+				21C06439291D11DB00F8280F /* bounceVC */,
+				21C06434291D104100F8280F /* rotationVC */,
+				21C0642F291D044300F8280F /* circleVC */,
 				21292DBA291C0BE0003B2D90 /* underBounceVC */,
 				21292DB1291C046B003B2D90 /* bottomVC */,
 				21292DB0291C0462003B2D90 /* topVC */,
@@ -147,6 +172,7 @@
 		210A487E2916C02F00EAD27A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				210A486F2916BA6700EAD27A /* LaunchScreen.storyboard */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -156,7 +182,6 @@
 			children = (
 				210A48632916BA6500EAD27A /* SceneDelegate.swift */,
 				210A48612916BA6500EAD27A /* AppDelegate.swift */,
-				210A486F2916BA6700EAD27A /* LaunchScreen.storyboard */,
 				21292DBF291C3005003B2D90 /* Animator.swift */,
 			);
 			name = System;
@@ -174,8 +199,8 @@
 		21292DB1291C046B003B2D90 /* bottomVC */ = {
 			isa = PBXGroup;
 			children = (
-				21292DB6291C0652003B2D90 /* bottom_Storyboard.storyboard */,
 				21292DB8291C0663003B2D90 /* bottomViewController.swift */,
+				21292DB6291C0652003B2D90 /* bottom_Storyboard.storyboard */,
 			);
 			name = bottomVC;
 			sourceTree = "<group>";
@@ -187,6 +212,51 @@
 				21292DBD291C0C02003B2D90 /* under_Storyboard.storyboard */,
 			);
 			name = underBounceVC;
+			sourceTree = "<group>";
+		};
+		21C0642F291D044300F8280F /* circleVC */ = {
+			isa = PBXGroup;
+			children = (
+				21C06432291D046C00F8280F /* circleViewController.swift */,
+				21C06430291D045E00F8280F /* circle_Storyboard.storyboard */,
+			);
+			name = circleVC;
+			sourceTree = "<group>";
+		};
+		21C06434291D104100F8280F /* rotationVC */ = {
+			isa = PBXGroup;
+			children = (
+				21C06435291D105100F8280F /* rotationViewController.swift */,
+				21C06437291D106500F8280F /* rotation_Storyboard.storyboard */,
+			);
+			name = rotationVC;
+			sourceTree = "<group>";
+		};
+		21C06439291D11DB00F8280F /* bounceVC */ = {
+			isa = PBXGroup;
+			children = (
+				21C06446291D125800F8280F /* bounceViewController.swift */,
+				21C0643C291D121100F8280F /* bounce_Storyboard.storyboard */,
+			);
+			name = bounceVC;
+			sourceTree = "<group>";
+		};
+		21C0643A291D11EC00F8280F /* positionVC */ = {
+			isa = PBXGroup;
+			children = (
+				21C06444291D124B00F8280F /* positionViewController.swift */,
+				21C0643E291D122300F8280F /* position_Storyboard.storyboard */,
+			);
+			name = positionVC;
+			sourceTree = "<group>";
+		};
+		21C0643B291D11F500F8280F /* sequenceVC */ = {
+			isa = PBXGroup;
+			children = (
+				21C06442291D123F00F8280F /* sequenceViewController.swift */,
+				21C06440291D123000F8280F /* sequence_Storyboard.storyboard */,
+			);
+			name = sequenceVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,14 +318,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				21292DB7291C0652003B2D90 /* bottom_Storyboard.storyboard in Resources */,
-				2105A70629197C09006799BD /* ImageViewVC.storyboard in Resources */,
+				21C0643F291D122300F8280F /* position_Storyboard.storyboard in Resources */,
+				21C06431291D045E00F8280F /* circle_Storyboard.storyboard in Resources */,
+				2105A70629197C09006799BD /* left_Storyboard.storyboard in Resources */,
 				210A48712916BA6700EAD27A /* LaunchScreen.storyboard in Resources */,
 				21292DB5291C05C1003B2D90 /* top_Storyboard.storyboard in Resources */,
+				21C06438291D106500F8280F /* rotation_Storyboard.storyboard in Resources */,
 				210A486E2916BA6700EAD27A /* Assets.xcassets in Resources */,
 				210A48832916DEA600EAD27A /* animationTableViewCell.xib in Resources */,
 				21292DBE291C0C02003B2D90 /* under_Storyboard.storyboard in Resources */,
 				210A48692916BA6500EAD27A /* Main.storyboard in Resources */,
 				2105A70829198AB2006799BD /* Right_Storyboard.storyboard in Resources */,
+				21C06441291D123000F8280F /* sequence_Storyboard.storyboard in Resources */,
+				21C0643D291D121100F8280F /* bounce_Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,16 +341,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C06447291D125800F8280F /* bounceViewController.swift in Sources */,
 				21292DB9291C0663003B2D90 /* bottomViewController.swift in Sources */,
-				2105A70429197BF3006799BD /* imageViewController.swift in Sources */,
+				2105A70429197BF3006799BD /* leftViewController.swift in Sources */,
 				2105A70B29198AEC006799BD /* rightViewController.swift in Sources */,
 				210A486C2916BA6500EAD27A /* Core_Animation_Step_by_Step.xcdatamodeld in Sources */,
 				210A48822916DEA600EAD27A /* animationTableViewCell.swift in Sources */,
+				21C06443291D123F00F8280F /* sequenceViewController.swift in Sources */,
 				21292DBC291C0BF5003B2D90 /* underViewController.swift in Sources */,
 				21292DB3291C047F003B2D90 /* topViewController.swift in Sources */,
 				210A48662916BA6500EAD27A /* ViewController.swift in Sources */,
 				210A48622916BA6500EAD27A /* AppDelegate.swift in Sources */,
+				21C06445291D124B00F8280F /* positionViewController.swift in Sources */,
 				21292DC0291C3005003B2D90 /* Animator.swift in Sources */,
+				21C06433291D046C00F8280F /* circleViewController.swift in Sources */,
+				21C06436291D105100F8280F /* rotationViewController.swift in Sources */,
 				210A48642916BA6500EAD27A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

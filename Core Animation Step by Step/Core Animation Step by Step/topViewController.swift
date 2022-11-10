@@ -15,6 +15,7 @@ class topViewController: UIViewController {
         super.viewDidLoad()
         right_anim()
         springAnimation()
+        viewEffects()
 
     }
     
@@ -42,6 +43,27 @@ class topViewController: UIViewController {
         jump.duration = jump.settlingDuration
         
         redview.layer.add(jump, forKey: nil)
+        
+    }
+    
+    private func viewEffects(){
+        
+        // MARK: View shadow Effects
+        
+        // Creating rounder corners
+        redview.layer.cornerRadius = 10
+
+        // Adding shadow effects
+        redview.layer.shadowOffset = CGSizeMake(5,5)
+        redview.layer.shadowOpacity = 0.7
+        redview.layer.shadowRadius = 3
+        redview.layer.shadowColor = UIColor(red: 20/225, green: 20/225, blue: 10/255, alpha: 0.7).cgColor
+        
+        // Applying borders
+        redview.layer.borderColor = UIColor(red: 40/225, green: 10/225, blue: 20/255, alpha: 0.1).cgColor
+
+        redview.layer.borderWidth = 3
+
     }
 
 }
