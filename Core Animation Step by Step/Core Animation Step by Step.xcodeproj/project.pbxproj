@@ -27,6 +27,8 @@
 		21292DBC291C0BF5003B2D90 /* underViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21292DBB291C0BF5003B2D90 /* underViewController.swift */; };
 		21292DBE291C0C02003B2D90 /* under_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21292DBD291C0C02003B2D90 /* under_Storyboard.storyboard */; };
 		21292DC0291C3005003B2D90 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21292DBF291C3005003B2D90 /* Animator.swift */; };
+		21A07FE0291DFC2A00F8F59F /* appleLogo_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A07FDF291DFC2A00F8F59F /* appleLogo_Storyboard.storyboard */; };
+		21A07FE2291DFC3D00F8F59F /* appleLogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A07FE1291DFC3D00F8F59F /* appleLogoViewController.swift */; };
 		21C06431291D045E00F8280F /* circle_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C06430291D045E00F8280F /* circle_Storyboard.storyboard */; };
 		21C06433291D046C00F8280F /* circleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06432291D046C00F8280F /* circleViewController.swift */; };
 		21C06436291D105100F8280F /* rotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C06435291D105100F8280F /* rotationViewController.swift */; };
@@ -64,6 +66,8 @@
 		21292DBB291C0BF5003B2D90 /* underViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = underViewController.swift; sourceTree = "<group>"; };
 		21292DBD291C0C02003B2D90 /* under_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = under_Storyboard.storyboard; sourceTree = "<group>"; };
 		21292DBF291C3005003B2D90 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		21A07FDF291DFC2A00F8F59F /* appleLogo_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = appleLogo_Storyboard.storyboard; sourceTree = "<group>"; };
+		21A07FE1291DFC3D00F8F59F /* appleLogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleLogoViewController.swift; sourceTree = "<group>"; };
 		21C06430291D045E00F8280F /* circle_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = circle_Storyboard.storyboard; sourceTree = "<group>"; };
 		21C06432291D046C00F8280F /* circleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleViewController.swift; sourceTree = "<group>"; };
 		21C06435291D105100F8280F /* rotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rotationViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 		210A487B2916BFAC00EAD27A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				21A07FDE291DFBB900F8F59F /* appleLogoAnimation */,
 				21C06448291D467600F8280F /* transformVC */,
 				21C0643B291D11F500F8280F /* sequenceVC */,
 				21C0643A291D11EC00F8280F /* positionVC */,
@@ -216,6 +221,15 @@
 				21292DBD291C0C02003B2D90 /* under_Storyboard.storyboard */,
 			);
 			name = underBounceVC;
+			sourceTree = "<group>";
+		};
+		21A07FDE291DFBB900F8F59F /* appleLogoAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				21A07FE1291DFC3D00F8F59F /* appleLogoViewController.swift */,
+				21A07FDF291DFC2A00F8F59F /* appleLogo_Storyboard.storyboard */,
+			);
+			name = appleLogoAnimation;
 			sourceTree = "<group>";
 		};
 		21C0642F291D044300F8280F /* circleVC */ = {
@@ -340,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21292DB7291C0652003B2D90 /* bottom_Storyboard.storyboard in Resources */,
+				21A07FE0291DFC2A00F8F59F /* appleLogo_Storyboard.storyboard in Resources */,
 				21C0643F291D122300F8280F /* position_Storyboard.storyboard in Resources */,
 				21C06431291D045E00F8280F /* circle_Storyboard.storyboard in Resources */,
 				2105A70629197C09006799BD /* left_Storyboard.storyboard in Resources */,
@@ -364,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A07FE2291DFC3D00F8F59F /* appleLogoViewController.swift in Sources */,
 				21C06447291D125800F8280F /* bounceViewController.swift in Sources */,
 				21C0644A291D469300F8280F /* transformViewController.swift in Sources */,
 				21292DB9291C0663003B2D90 /* bottomViewController.swift in Sources */,
