@@ -90,7 +90,7 @@ class transformViewController: UIViewController {
             imageView.isHidden = false
             imageView2.isHidden = false
             view1.isHidden = false
-           touchlabel.isHidden = true
+            touchlabel.isHidden = true
             
             let anim = CABasicAnimation(keyPath: "transform")
             anim.fromValue = CATransform3DMakeRotation(20, 0, 1, 0)
