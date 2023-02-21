@@ -27,6 +27,9 @@
 		21292DBC291C0BF5003B2D90 /* underViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21292DBB291C0BF5003B2D90 /* underViewController.swift */; };
 		21292DBE291C0C02003B2D90 /* under_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21292DBD291C0C02003B2D90 /* under_Storyboard.storyboard */; };
 		21292DC0291C3005003B2D90 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21292DBF291C3005003B2D90 /* Animator.swift */; };
+		218B318529A4FA440037017E /* DotAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218B318429A4FA440037017E /* DotAnimation.swift */; };
+		218B318729A516A00037017E /* DotAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218B318629A516A00037017E /* DotAnimationViewController.swift */; };
+		218B318A29A516D10037017E /* DotAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218B318929A516D10037017E /* DotAnimation.storyboard */; };
 		21A07FE0291DFC2A00F8F59F /* appleLogo_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A07FDF291DFC2A00F8F59F /* appleLogo_Storyboard.storyboard */; };
 		21A07FE2291DFC3D00F8F59F /* appleLogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A07FE1291DFC3D00F8F59F /* appleLogoViewController.swift */; };
 		21C06431291D045E00F8280F /* circle_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C06430291D045E00F8280F /* circle_Storyboard.storyboard */; };
@@ -66,6 +69,9 @@
 		21292DBB291C0BF5003B2D90 /* underViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = underViewController.swift; sourceTree = "<group>"; };
 		21292DBD291C0C02003B2D90 /* under_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = under_Storyboard.storyboard; sourceTree = "<group>"; };
 		21292DBF291C3005003B2D90 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		218B318429A4FA440037017E /* DotAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotAnimation.swift; sourceTree = "<group>"; };
+		218B318629A516A00037017E /* DotAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotAnimationViewController.swift; sourceTree = "<group>"; };
+		218B318929A516D10037017E /* DotAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DotAnimation.storyboard; sourceTree = "<group>"; };
 		21A07FDF291DFC2A00F8F59F /* appleLogo_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = appleLogo_Storyboard.storyboard; sourceTree = "<group>"; };
 		21A07FE1291DFC3D00F8F59F /* appleLogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleLogoViewController.swift; sourceTree = "<group>"; };
 		21C06430291D045E00F8280F /* circle_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = circle_Storyboard.storyboard; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 				210A487E2916C02F00EAD27A /* Model */,
 				210A487D2916C02500EAD27A /* View */,
 				210A487B2916BFAC00EAD27A /* Controller */,
+				210A486F2916BA6700EAD27A /* LaunchScreen.storyboard */,
 				210A486D2916BA6700EAD27A /* Assets.xcassets */,
 				210A48722916BA6700EAD27A /* Info.plist */,
 				210A486A2916BA6500EAD27A /* Core_Animation_Step_by_Step.xcdatamodeld */,
@@ -153,6 +160,7 @@
 		210A487B2916BFAC00EAD27A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				218B318829A516A70037017E /* Dot Animation VC */,
 				21A07FDE291DFBB900F8F59F /* appleLogoAnimation */,
 				21C06448291D467600F8280F /* transformVC */,
 				21C0643B291D11F500F8280F /* sequenceVC */,
@@ -181,7 +189,7 @@
 		210A487E2916C02F00EAD27A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				210A486F2916BA6700EAD27A /* LaunchScreen.storyboard */,
+				218B318B29A518F20037017E /* Extension */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -191,7 +199,6 @@
 			children = (
 				210A48632916BA6500EAD27A /* SceneDelegate.swift */,
 				210A48612916BA6500EAD27A /* AppDelegate.swift */,
-				21292DBF291C3005003B2D90 /* Animator.swift */,
 			);
 			name = System;
 			sourceTree = "<group>";
@@ -221,6 +228,24 @@
 				21292DBD291C0C02003B2D90 /* under_Storyboard.storyboard */,
 			);
 			name = underBounceVC;
+			sourceTree = "<group>";
+		};
+		218B318829A516A70037017E /* Dot Animation VC */ = {
+			isa = PBXGroup;
+			children = (
+				218B318629A516A00037017E /* DotAnimationViewController.swift */,
+				218B318929A516D10037017E /* DotAnimation.storyboard */,
+			);
+			name = "Dot Animation VC";
+			sourceTree = "<group>";
+		};
+		218B318B29A518F20037017E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				21292DBF291C3005003B2D90 /* Animator.swift */,
+				218B318429A4FA440037017E /* DotAnimation.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		21A07FDE291DFBB900F8F59F /* appleLogoAnimation */ = {
@@ -365,6 +390,7 @@
 				210A48832916DEA600EAD27A /* animationTableViewCell.xib in Resources */,
 				21292DBE291C0C02003B2D90 /* under_Storyboard.storyboard in Resources */,
 				21C0644C291D46C900F8280F /* transform_Storyboard.storyboard in Resources */,
+				218B318A29A516D10037017E /* DotAnimation.storyboard in Resources */,
 				210A48692916BA6500EAD27A /* Main.storyboard in Resources */,
 				2105A70829198AB2006799BD /* Right_Storyboard.storyboard in Resources */,
 				21C06441291D123000F8280F /* sequence_Storyboard.storyboard in Resources */,
@@ -383,6 +409,7 @@
 				21C06447291D125800F8280F /* bounceViewController.swift in Sources */,
 				21C0644A291D469300F8280F /* transformViewController.swift in Sources */,
 				21292DB9291C0663003B2D90 /* bottomViewController.swift in Sources */,
+				218B318529A4FA440037017E /* DotAnimation.swift in Sources */,
 				2105A70429197BF3006799BD /* leftViewController.swift in Sources */,
 				2105A70B29198AEC006799BD /* rightViewController.swift in Sources */,
 				210A486C2916BA6500EAD27A /* Core_Animation_Step_by_Step.xcdatamodeld in Sources */,
@@ -392,6 +419,7 @@
 				21292DB3291C047F003B2D90 /* topViewController.swift in Sources */,
 				210A48662916BA6500EAD27A /* ViewController.swift in Sources */,
 				210A48622916BA6500EAD27A /* AppDelegate.swift in Sources */,
+				218B318729A516A00037017E /* DotAnimationViewController.swift in Sources */,
 				21C06445291D124B00F8280F /* positionViewController.swift in Sources */,
 				21292DC0291C3005003B2D90 /* Animator.swift in Sources */,
 				21C06433291D046C00F8280F /* circleViewController.swift in Sources */,

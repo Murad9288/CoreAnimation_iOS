@@ -7,15 +7,10 @@
 
 import UIKit
 
-
 class appleLogoViewController: UIViewController {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
-    
-
-
 }

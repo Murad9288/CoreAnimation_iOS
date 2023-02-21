@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var animationtextName = ["Left-side Animation","Right-side Animation","Top Animation","Bottom Animation","Mobile Unlocked Animation","Circle Animation","Rotation Animation","Bounce Animation","Position Animation","Sequence Animation","Transform Show","Apple Logo Animation"]
+    var animationtextName = ["Left-side Animation","Right-side Animation","Top Animation","Bottom Animation","Mobile Unlocked Animation","Circle Animation","Rotation Animation","Bounce Animation","Position Animation","Sequence Animation","Transform Show","Dot Animation","Apple Logo Animation"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -111,8 +111,13 @@ extension ViewController: UITableViewDelegate{
             let vc = st.instantiateViewController(withIdentifier: "transformViewController") as! transformViewController
             
             self.navigationController?.pushViewController(vc, animated: true)
-            
         } else if indexPath.row == 11 {
+            let st = UIStoryboard(name: "DotAnimation", bundle: nil)
+            let vc = st.instantiateViewController(withIdentifier: "DotAnimationViewController") as! DotAnimationViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        } else if indexPath.row == 12 {
             let st = UIStoryboard(name: "appleLogo_Storyboard", bundle: nil)
             let vc = st.instantiateViewController(withIdentifier: "appleLogoViewController") as! appleLogoViewController
             
