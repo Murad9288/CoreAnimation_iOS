@@ -21,27 +21,28 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtA-dI-1nf">
-                                        <rect key="frame" x="156.66666666666666" y="339.66666666666669" width="80" height="80"/>
+                                        <rect key="frame" x="57" y="711" width="60" height="40"/>
+                                        <color key="backgroundColor" red="0.92191688279999995" green="0.30159523789999998" blue="0.24109067980000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="Lgy-Eu-9Ol"/>
-                                            <constraint firstAttribute="width" constant="80" id="hV6-jG-4Fz"/>
+                                            <constraint firstAttribute="height" constant="40" id="Eqv-ku-XeC"/>
+                                            <constraint firstAttribute="width" constant="60" id="V7A-Cv-k3D"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="BtA-dI-1nf" firstAttribute="centerX" secondItem="6Lv-fk-FCj" secondAttribute="centerX" id="IIc-g8-B8w"/>
-                                    <constraint firstItem="BtA-dI-1nf" firstAttribute="centerY" secondItem="6Lv-fk-FCj" secondAttribute="centerY" id="rQr-Kw-2cA"/>
+                                    <constraint firstAttribute="bottom" secondItem="BtA-dI-1nf" secondAttribute="bottom" constant="8" id="7gg-Kx-zPU"/>
+                                    <constraint firstItem="BtA-dI-1nf" firstAttribute="leading" secondItem="6Lv-fk-FCj" secondAttribute="leading" constant="57" id="lNF-cg-gKR"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Lv-fk-FCj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="9ee-vZ-0yR"/>
-                            <constraint firstItem="6Lv-fk-FCj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Jf7-wm-F5S"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6Lv-fk-FCj" secondAttribute="bottom" id="O59-HO-jNa"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6Lv-fk-FCj" secondAttribute="trailing" id="llZ-yp-p5M"/>
+                            <constraint firstItem="6Lv-fk-FCj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4yM-oy-Awn"/>
+                            <constraint firstItem="6Lv-fk-FCj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="m3z-8s-kHX"/>
+                            <constraint firstItem="6Lv-fk-FCj" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="qzl-cP-NMk"/>
+                            <constraint firstItem="6Lv-fk-FCj" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="tzm-Ax-pZk"/>
                         </constraints>
                     </view>
                     <connections>

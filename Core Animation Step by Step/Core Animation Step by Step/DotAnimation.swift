@@ -36,7 +36,13 @@ class DotsAnimation {
 
         let width = CGFloat(dots.frame.width/6)
         let dotDiameter = (dots.frame.height < width) ? dots.frame.height : width
-        var frame = CGRect(x: (dots.frame.origin.x + width), y: (dots.frame.origin.y + (dots.frame.height/2) - (dotDiameter/2)), width: dotDiameter, height: dotDiameter)
+        let dotTotalWidth = (dotDiameter * numberDots) + (0.6 * dotDiameter * numberDots-8)
+        var frame = CGRect(origin: CGPoint(x: (superView.frame.width - dotTotalWidth)/2, y: (superView.frame.height-dotDiameter)/2),
+                           size: CGSize(width: dotDiameter, height: dotDiameter))
+        
+        //CGRect(x: (dotDiameter*numberDots)/2, y: (dots.frame.origin.y + (dots.frame.height/2) - (dotDiameter/2)), width: dotDiameter, height: dotDiameter)
+        
+        //CGRect(origin: superView.center, size: CGSize(width: dotDiameter, height: dotDiameter))
         let cornerRadiusLocal = dotDiameter / 2
 
         for _ in 0...Int(numberDots-1) {

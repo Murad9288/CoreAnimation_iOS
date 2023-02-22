@@ -26,7 +26,8 @@ class DotAnimationViewController: UIViewController {
 //        viewToAnimate.backgroundColor = UIColor(white: 1, alpha: 0)
         let animationDots = animation.startDotsAnimation(superView: bgAnimateView, dotsColor: UIColor.white)
         animationDots.frame = bgAnimateView.bounds
-        view.addSubview(animationDots)
+//        animationDots.backgroundColor = .blue
+        bgAnimateView.addSubview(animationDots)
         
     }
 }
