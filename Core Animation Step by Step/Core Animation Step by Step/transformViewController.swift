@@ -57,7 +57,7 @@ class transformViewController: UIViewController {
         anim.toValue = CATransform3DMakeRotation(-0.5, 0, 10, 0)
         anim.duration = 1
         anim.autoreverses = true
-        anim.repeatCount = 1000
+        anim.repeatCount = .infinity
         touchlabel.layer.add(anim, forKey: "transform")
         
     }

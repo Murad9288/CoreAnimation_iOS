@@ -20,6 +20,8 @@
 		210A48712916BA6700EAD27A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210A486F2916BA6700EAD27A /* LaunchScreen.storyboard */; };
 		210A48822916DEA600EAD27A /* animationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A48802916DEA600EAD27A /* animationTableViewCell.swift */; };
 		210A48832916DEA600EAD27A /* animationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210A48812916DEA600EAD27A /* animationTableViewCell.xib */; };
+		2114A2B829A68E0700C5BFD3 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2114A2B729A68E0700C5BFD3 /* ButtonAnimation.swift */; };
+		2114A2BA29A6965300C5BFD3 /* LFTPulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2114A2B929A6965300C5BFD3 /* LFTPulseAnimation.swift */; };
 		21292DB3291C047F003B2D90 /* topViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21292DB2291C047F003B2D90 /* topViewController.swift */; };
 		21292DB5291C05C1003B2D90 /* top_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21292DB4291C05C1003B2D90 /* top_Storyboard.storyboard */; };
 		21292DB7291C0652003B2D90 /* bottom_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21292DB6291C0652003B2D90 /* bottom_Storyboard.storyboard */; };
@@ -62,6 +64,8 @@
 		210A48722916BA6700EAD27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		210A48802916DEA600EAD27A /* animationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animationTableViewCell.swift; sourceTree = "<group>"; };
 		210A48812916DEA600EAD27A /* animationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = animationTableViewCell.xib; sourceTree = "<group>"; };
+		2114A2B729A68E0700C5BFD3 /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
+		2114A2B929A6965300C5BFD3 /* LFTPulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFTPulseAnimation.swift; sourceTree = "<group>"; };
 		21292DB2291C047F003B2D90 /* topViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topViewController.swift; sourceTree = "<group>"; };
 		21292DB4291C05C1003B2D90 /* top_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = top_Storyboard.storyboard; sourceTree = "<group>"; };
 		21292DB6291C0652003B2D90 /* bottom_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = bottom_Storyboard.storyboard; sourceTree = "<group>"; };
@@ -244,6 +248,8 @@
 			children = (
 				21292DBF291C3005003B2D90 /* Animator.swift */,
 				218B318429A4FA440037017E /* DotAnimation.swift */,
+				2114A2B729A68E0700C5BFD3 /* ButtonAnimation.swift */,
+				2114A2B929A6965300C5BFD3 /* LFTPulseAnimation.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -352,6 +358,7 @@
 				TargetAttributes = {
 					210A485D2916BA6500EAD27A = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -419,8 +426,10 @@
 				21292DB3291C047F003B2D90 /* topViewController.swift in Sources */,
 				210A48662916BA6500EAD27A /* ViewController.swift in Sources */,
 				210A48622916BA6500EAD27A /* AppDelegate.swift in Sources */,
+				2114A2B829A68E0700C5BFD3 /* ButtonAnimation.swift in Sources */,
 				218B318729A516A00037017E /* DotAnimationViewController.swift in Sources */,
 				21C06445291D124B00F8280F /* positionViewController.swift in Sources */,
+				2114A2BA29A6965300C5BFD3 /* LFTPulseAnimation.swift in Sources */,
 				21292DC0291C3005003B2D90 /* Animator.swift in Sources */,
 				21C06433291D046C00F8280F /* circleViewController.swift in Sources */,
 				21C06436291D105100F8280F /* rotationViewController.swift in Sources */,
@@ -500,11 +509,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SHARED_PRECOMPS_DIR = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -554,10 +564,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SHARED_PRECOMPS_DIR = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -569,6 +580,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SUVM6SNN22;
@@ -588,6 +600,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.murad.www.Core-Animation-Step-by-Step";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Core Animation Step by Step/Core Animation Step by Step-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -598,6 +612,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SUVM6SNN22;
@@ -617,6 +632,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.murad.www.Core-Animation-Step-by-Step";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Core Animation Step by Step/Core Animation Step by Step-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

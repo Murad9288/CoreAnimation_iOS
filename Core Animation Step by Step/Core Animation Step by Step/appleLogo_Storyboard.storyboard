@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +18,56 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="InU-cf-Hcd">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCl-m7-4WK">
+                                        <rect key="frame" x="146.66666666666666" y="329.66666666666669" width="100" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZf-yq-ymh" customClass="PulsatingButton" customModule="Core_Animation_Step_by_Step" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" red="1" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="send 1"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="VZf-yq-ymh" firstAttribute="top" secondItem="yCl-m7-4WK" secondAttribute="top" id="6Ga-ST-Ek3"/>
+                                            <constraint firstItem="VZf-yq-ymh" firstAttribute="leading" secondItem="yCl-m7-4WK" secondAttribute="leading" id="Pcc-Fa-h0J"/>
+                                            <constraint firstAttribute="height" constant="100" id="Qnm-fw-9xr"/>
+                                            <constraint firstAttribute="width" constant="100" id="VI6-CT-dAf"/>
+                                            <constraint firstAttribute="trailing" secondItem="VZf-yq-ymh" secondAttribute="trailing" id="efd-2j-r0f"/>
+                                            <constraint firstAttribute="bottom" secondItem="VZf-yq-ymh" secondAttribute="bottom" id="evS-Cu-XLq"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Blm-so-92J">
+                                        <rect key="frame" x="146" y="90" width="100" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQf-fg-OTE">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" red="1" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="send 1"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="4Hl-Vj-253"/>
+                                            <constraint firstItem="sQf-fg-OTE" firstAttribute="top" secondItem="Blm-so-92J" secondAttribute="top" id="C0v-GC-Ikb"/>
+                                            <constraint firstAttribute="bottom" secondItem="sQf-fg-OTE" secondAttribute="bottom" id="JTp-Oc-PUW"/>
+                                            <constraint firstAttribute="width" constant="100" id="R0W-cL-Zkg"/>
+                                            <constraint firstAttribute="trailing" secondItem="sQf-fg-OTE" secondAttribute="trailing" id="fO8-TX-Gr1"/>
+                                            <constraint firstItem="sQf-fg-OTE" firstAttribute="leading" secondItem="Blm-so-92J" secondAttribute="leading" id="fkt-N5-Upq"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="hoA-sa-pR8"/>
+                                            <constraint firstAttribute="height" constant="100" id="mEO-aV-LAO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Blm-so-92J" secondAttribute="trailing" constant="147" id="62U-Hq-zJD"/>
+                                    <constraint firstItem="yCl-m7-4WK" firstAttribute="centerX" secondItem="InU-cf-Hcd" secondAttribute="centerX" id="N2d-0c-Inz"/>
+                                    <constraint firstItem="Blm-so-92J" firstAttribute="leading" secondItem="InU-cf-Hcd" secondAttribute="leading" constant="146" id="r91-i8-vOw"/>
+                                    <constraint firstItem="yCl-m7-4WK" firstAttribute="centerY" secondItem="InU-cf-Hcd" secondAttribute="centerY" id="rYl-wi-a0u"/>
+                                    <constraint firstItem="Blm-so-92J" firstAttribute="top" secondItem="InU-cf-Hcd" secondAttribute="top" constant="90" id="vTa-mQ-SG5"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -31,6 +79,12 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="InU-cf-Hcd" secondAttribute="bottom" id="Tfn-um-Y3O"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgview" destination="yCl-m7-4WK" id="L93-nB-wSb"/>
+                        <outlet property="btnOne" destination="VZf-yq-ymh" id="OQU-5F-a0Y"/>
+                        <outlet property="button2" destination="sQf-fg-OTE" id="BXY-m4-R13"/>
+                        <outlet property="view2" destination="Blm-so-92J" id="yKy-rl-75s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,8 +92,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="send 1" width="38" height="38"/>
     </resources>
 </document>

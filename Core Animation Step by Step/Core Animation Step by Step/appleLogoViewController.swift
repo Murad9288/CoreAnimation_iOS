@@ -6,11 +6,31 @@
 //
 
 import UIKit
-
 class appleLogoViewController: UIViewController {
     
     
+    var pulseEffect = LFTPulseAnimation(layer: CGFloat.self)
+    
+    @IBOutlet weak var view2: UIView!
+    
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var bgview: UIView!
+    @IBOutlet weak var btnOne: PulsatingButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        pulsingbuttonAnimation()
+        
+    }
+    
+    private func pulsingbuttonAnimation() {
+        btnOne.center = self.bgview.center
+        btnOne.layer.cornerRadius = btnOne.bounds.height/2
+        btnOne.pulse()
+        button2.layer.cornerRadius = button2.bounds.height/2
+        pulseEffect = LFTPulseAnimation(repeatCount: Float.infinity, radius: 100, position: button2.center)
+        button2.layer.insertSublayer(self.pulseEffect, below: button2.layer)
+        
+//        btnOne.pulseB()
     }
 }
