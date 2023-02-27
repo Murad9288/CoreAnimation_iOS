@@ -1,4 +1,5 @@
-# Core-Animation-Step-by-Step
+<div align = "center">
+<h1> Core-Animation-Step-by-Step </h1>
 
 ![](https://img.shields.io/badge/Build-passing-success.svg?style=flat)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![](https://img.shields.io/badge/Platform-iOS-ff69b4.svg?style=flat)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -30,3 +31,4 @@
 
 <img src="./Image sample/v4.gif" width='200px'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/v6.gif" width='200px'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/v7.gif" width='200px'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/v9.gif" width='200px'>
 
+ </div>
