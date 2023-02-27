@@ -7,13 +7,13 @@
 
 import UIKit
 
-class LFTPulseAnimation: CALayer {
+class ButtonPulseAnimation: CALayer {
    
     var radius:                 CGFloat = 200.0
     var fromValueForRadius:     Float = 0.4
     var fromValueForAlpha:      Float = 0.45
     var keyTimeForHalfOpacity:  Float = 0
-    var animationDuration:      TimeInterval = 0.90
+    var animationDuration:      TimeInterval = 10
     var pulseInterval:          TimeInterval = 0
     var useTimingFunction:      Bool = true
     var animationGroup:         CAAnimationGroup = CAAnimationGroup()
