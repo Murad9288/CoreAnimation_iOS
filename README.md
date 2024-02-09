@@ -18,17 +18,17 @@
 
 <br/>
 
-<img src="./Image sample/8.png" width='200px'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/9.png" width='200px'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/10.png" width='200px'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/11.png" width='200px'>
+<img src="./Image sample/8.png" width='200px'>&nbsp;&nbsp;<img src="./Image sample/9.png" width='200px'>&nbsp;&nbsp;<img src="./Image sample/10.png" width='200px'>&nbsp;&nbsp;<img src="./Image sample/11.png" width='200px'>
 
 
 <br/>
 
 ## Core Animation Gif Image -->
 
-<img src="./Image sample/v1.gif" width='200px'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/v2.gif" width='200px'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/v3.gif" width='200px'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/v8.gif" width='200px'>
+<img src="./Image sample/v1.gif" width='200px'>&nbsp;&nbsp;<img src="./Image sample/v2.gif" width='200px'>&nbsp;&nbsp;<img src="./Image sample/v3.gif" width='200px'>&nbsp;&nbsp;<img src="./Image sample/v8.gif" width='200px'>
 
 <br/>
 
-<img src="./Image sample/v4.gif" width='200px'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/v6.gif" width='200px'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/v7.gif" width='200px'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/v9.gif" width='200px'>
+<img src="./Image sample/v4.gif" width='200px'>&nbsp;&nbsp;<img src="./Image sample/v6.gif" width='200px'>&nbsp;&nbsp;<img src="./Image sample/v7.gif" width='200px'>&nbsp;&nbsp;<img src="./Image sample/v9.gif" width='200px'>
 
  </div>
